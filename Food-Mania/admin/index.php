@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Food Corner</title>
+	<title>Food Mania</title>
 </head>
 <body>
 	<?php
@@ -18,7 +18,6 @@
 		
 	}else{
 		?>
-		<a href="sigup.html">SignUp</a>
 		<a href="login.php">Login</a>
 		<?php
 	}

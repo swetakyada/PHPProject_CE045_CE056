@@ -67,7 +67,7 @@
 					<input type="password" name="passwd1" id="passwd1" placeholder="Confirm password" required><br/>
 				</div>
 				<div class="form-input">
-					<input type="number" name="phone" id="phone" placeholder="abphone_number" required><br/>
+					<input type="number" name="phone" id="phone" placeholder="phone_number" required><br/>
 				</div>
 				<div class="form-input">
 					<input type="text" name="hno" placeholder="Home No" required><br/>
@@ -76,7 +76,7 @@
 					<textarea placeholder="address" name="address" required></textarea><br/>
 				</div>
 				<div class="form-input">
-					<input type="Number" name="pincode" placeholder="abpincode" required><br/>
+					<input type="Number" name="pincode" placeholder="pincode" required><br/>
 				</div>
 				
 				

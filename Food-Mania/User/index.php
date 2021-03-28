@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Food Corner</title>
+	<title>Food Mania</title>
 </head>
 <body bg>
 	<?php
