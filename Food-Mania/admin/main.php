@@ -2,11 +2,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, intial-scale=1, user-scalable=no"/>
-  <title>FOOD CORNER</title>
+  <title>food mania</title>
   <link rel="stylesheet" type="text/css" href="css/backgroundimage.css">
  <link rel="stylesheet" type="text/css" href="css/style.css">
  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
- <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'> 
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
  <link rel="stylesheet" type="text/css" href="css/table.css">
 
 </head>
@@ -17,7 +19,7 @@
 			<i class="fa fa-bars menu" aria-hidden="true"></i>
 		</div>
 		<ul>
-			<li> <a href="index.php"><img src="FoodCornerLogo.gif" width="250" height="50"></a></li>
+		<li><a href="index.php" style="font-family: 'Dancing Script', cursive;font-size: 35px;color: #49111c;">Food Mania</a></li>
 			<li><a href="index.php">Orders</a></li>
 			<li><a href="display_menu.php">Menu</a></li>
 			<li><a href="add_menu.php">Add Menu</a></li>
@@ -34,7 +36,6 @@
 				<li style="float:right;"><a href="profile.php"> <?php echo $_SESSION['user'];?> </a></li>
 			<?php }else {?>
 				<li style="float:right;"><a href="login1.php">Login</a></li>
-				<li style="float:right;"><a href="sigup1.php">SignUp</a></li>
 			<?php } ?>
 		</ul>
 		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>

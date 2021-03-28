@@ -9,12 +9,12 @@
 </head>
 <body background="images/image.jpeg">
 	<div id = "contain" style = "margin-top:30px;">
-	 <img class = "slides" src="images/Slider1.jpg" style="border-radius: 10px; width: 60%;height:450px;margin-left: 17%;"/>
-	 <img class = "slides" src="images/Slider2.jpg" style="border-radius: 10px;width: 60%;height:450px;margin-left: 17%";/>
-    <img class = "slides" src="images/Slider3.jpg" style="border-radius: 10px;width: 60%;height:450px;margin-left: 17%;"/>
-    <img class = "slides" src="images/Slider4.jpg" style="border-radius: 10px; width: 60%;height:450px;margin-left: 17%;"/>
-   <img class = "slides" src="images/Slider5.jpg" style="border-radius: 10px;width: 60%;height:450px;margin-left: 17%";/>
-    <img class = "slides" src="images/Slider6.jpg" style="border-radius: 10px;width: 60%;height:450px;margin-left: 17%;"/>
+	 <img class = "slides" src="images/Slider1.jpg" style="border-radius: 10px; width: 75%;height:550px;margin-left: 10%;"/>
+	 <img class = "slides" src="images/Slider2.jpg" style="border-radius: 10px;width: 75%;height:550px;margin-left: 10%;"/>
+    <img class = "slides" src="images/Slider3.jpg" style="border-radius: 10px;width: 75%;height:550px;margin-left: 10%;"/>
+    <img class = "slides" src="images/Slider4.jpg" style="border-radius: 10px; width: 75%;height:550px;margin-left: 10%;"/>
+   <img class = "slides" src="images/Slider5.jpg" style="border-radius: 10px;width: 75%;height:550px;margin-left: 10%;"/>
+    <img class = "slides" src="images/Slider6.jpg" style="border-radius: 10px;width: 75%;height:550px;margin-left: 10%;"/>
    
     
     <button style="margin-left: 17%;" class = "btn" onclick = "plusIndex(-1)" id = "btn1">&#10094</button>
