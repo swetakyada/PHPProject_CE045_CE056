@@ -1,9 +1,9 @@
 <?php
-include 'connection.php';
-$id=$_GET["id"];
-mysqli_query($conn,"update order_list set status='yes' where id='$id'")
+	include 'connection.php';
+	$id=$_GET["id"];
+	mysqli_query($conn,"update orders set status='1' where id='$id'")
 ?>
 
 <script type="text/javascript">
-	window.location="index.php"; 
+	window.location="approved_orders.php"; 
 </script>

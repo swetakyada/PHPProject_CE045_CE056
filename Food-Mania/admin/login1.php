@@ -1,29 +1,44 @@
-<!DOCTYPE html>
-<html>
+<?php
+	if(isset($_POST['submit'])) 
+     {
+     	include_once 'connection.php';
+     	$email = mysqli_real_escape_string($conn,$_POST['email']);
+    	$passwd = mysqli_real_escape_string($conn,$_POST['password']);
+		$sql = "select username,id from admin where email = '$email' and password = '$passwd'";
+		
+		$count=0;
+		$result = mysqli_query($conn,$sql);
+		$count = mysqli_num_rows($result);
+		
+		if($count > 0)
+		{
 
-<head>
-    <meta name="viewport" content="width=device-width, intial-scale=1, user-scalable=no" />
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <?php 
-			include 'main.php';
-		?>
-</head>
-
-<body>
-    <div class="cont">
-        <form action="login.php" method="post" name="login.php">
-            <div class="form-input">
-                <input type="email" name="email" placeholder="Email" style="height: 40px; border-radius: 8px;" required><br>
-            </div>
-            <div class="form-input">
-                <input type="password" name="password" placeholder="password" style="height: 40px; border-radius: 8px;" required><br>
-            </div>
-            <input type="submit" name="submit" value="Login" class="btn-login">
-            
-
-        </form>
-    </div>
-</body>
-
-</html>
+			session_start();
+			$multi_array = array();
+			while($row = mysqli_fetch_assoc($result))
+			{
+				$multi_array[] = $row;	
+			}
+			foreach($multi_array as $key)
+			{
+				$_SESSION["admin"]=$key['username'];
+				$_SESSION['id']=$key['id'];
+			}
+			?>
+			<script type="text/javascript">
+				alert('login successful');
+				window.location="index.php";
+			</script>
+			<?php
+		} 
+		else
+		{
+			?>
+			<script type="text/javascript">
+				alert('Invalid details');
+				window.location="login.php";
+			</script>
+			<?php
+		}
+    }
+?>

@@ -18,19 +18,19 @@
 				<table border="1px">
 				<tr>
 					<td>Name :</td>
-					<td>Food Corner</td>
+					<td>Food Mania</td>
 				</tr>
 				<tr>
 					<td>Email :</td>
-					<td>foodcorner@gmail.com</td>
+					<td>foodmania@gmail.com</td>
 				</tr>
 				<tr>
 					<td>Phone number :</td>
-					<td>9533693080</td>
+					<td>9876543210</td>
 				</tr>
 				<tr>
 					<td>Pincode :</td>
-					<td>504107</td>
+					<td>123456</td>
 				</tr>
 				
 				<tr>

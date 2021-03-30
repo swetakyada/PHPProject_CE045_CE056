@@ -12,7 +12,7 @@ body {
 
 .cont {
     width: 490px;
-    height: 575px;
+    height: 500px;
     padding-top: 40px;
     text-align: center;
     background-color: #75716d;
@@ -43,6 +43,7 @@ textarea {
     margin-bottom: 20px;
     background-color: #fff;
     padding-left: 20px;
+    border-radius: 15px;
 }
 
 form-input:before {
@@ -61,6 +62,5 @@ form-input:before {
     color: #fff;
     background-color: #06aed5;
     border: none;
-    border-radius: 4px;
-    border-bottom: 4px solid #06aed5;
+    border-radius: 2px;
 }
