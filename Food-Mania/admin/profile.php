@@ -9,14 +9,11 @@
 	session_start();
 	include "connection.php";
 	include 'main.php';
-
-
-	
-	if(isset($_SESSION['user']))
+	if(isset($_SESSION['admin']))
 	{
-		$username=$_SESSION["user"];
+		$username=$_SESSION["admin"];
 		$id=$_SESSION["id"];
-		$sql1 = "select * from admin where fname = '$username' and id = '$id'";
+		$sql1 = "select * from admin where username='$username' and id = '$id'";
 		$result = mysqli_query($conn,$sql1);
 		$multi_array = array();
 		echo("<h1>Profile</h1>");

@@ -21,10 +21,12 @@ include 'main.php'
 			<option value=""></option>
 			<?php
 				while ($table = mysqli_fetch_array($ud)) 
-				{?>
-			<option value="<?php echo $table['name']; ?>"><?php echo $table['name']; ?></option>
-				<?php } ?>
-			
+				{
+					?>
+					<option value="<?php echo $table['name']; ?>"><?php echo $table['name']; ?></option>
+					<?php 
+				} 
+				?>
 		</select>
 
 		<input type="submit" name="submit" value="check">

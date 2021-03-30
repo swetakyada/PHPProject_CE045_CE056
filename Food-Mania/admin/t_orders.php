@@ -56,7 +56,6 @@
 				echo "<td>"; echo $row['price']; echo "</td>";
 				echo "<td>";?> <a href="approvet.php?id=<?php echo $row['id']; ?>">Apporve</a> <?php echo "</td>";
 				echo "<td>";?> <a href="notapprovet.php?id=<?php echo $row['id']; ?>">Cancel</a> <?php echo "</td>";	
-				
 				echo "</tr>";
 			}
 
