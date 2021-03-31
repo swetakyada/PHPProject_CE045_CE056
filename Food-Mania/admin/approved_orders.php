@@ -64,7 +64,7 @@
 						echo "<h1>No Food Orders</h1>";
 					}
                     ?>
-                    Click <a href="orders.php">here</a> to see all the orders.
+                    <h4 style="color: black">Click <a href="orders.php" style="color: green">here</a> to see all the orders.</h4>
                     <?php
 				}
 			?>

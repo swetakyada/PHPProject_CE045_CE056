@@ -5,9 +5,13 @@ body {
 
 .page-bg {
     background: url('../images/Back.jpg');
-    position: absolute;
+    position: fixed;
     z-index: -1;
     background-size: cover;
+    background-repeat: repeat-y;
     width: 100%;
-    height: 100%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }

@@ -20,14 +20,16 @@
 		while($row = mysqli_fetch_array($result))
 		{
 			?>
-				<table border="1px">
+			<center>
+				
+				<table border="1px" style="width: 400px;height: 270px;">
 				<tr>
 					<td>Id :
 					<td><?php echo $row['id']; ?>
 				</tr>
 				<tr>
 					<td>Name :</td>
-					<td><?php echo $row['fname']; ?></td>
+					<td><?php echo $row['username']; ?></td>
 				</tr>
 				<tr>
 					<td>Email :</td>
@@ -35,12 +37,14 @@
 				</tr>
 				<tr>
 					<td>Phone number :</td>
-					<td><?php echo $row['phone']; ?></td>
+					<td><?php echo $row['phone_no']; ?></td>
 				</tr>
 				
 				
 						
 				</table>
+			</center>
+				
 		<?php		
 		}
 	}else{

@@ -16,15 +16,15 @@
     </head>
     <body>
         <center>
-            <h1>Categories</h1>
-                <a href="add_category.php">Add Category</a>
+            <h1 style="color: black">Categories</h1>
+                <a href="add_category.php" style="color: black">Add Category</a>
             <?php
                 include 'connection.php';
                 if(isset($_SESSION['admin']))
                 { 
                     $result = mysqli_query($conn, "select * from category");
                     $count = mysqli_num_rows($result);
-                    echo "<table align: 'center'; border=1px>";
+                    echo "<table align: 'center';>";
                     echo "<tr>";
                     echo "<th>Id</th>";
                     echo "<th>Category name</th>";

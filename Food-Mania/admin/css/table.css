@@ -2,7 +2,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 95%;
-    border: 1px solid #ddd;
 	opacity: .7;
 	background: black;
     margin: 2.3%;
@@ -34,5 +33,5 @@ a{
 h1{
     color: black;
     text-align: center;
-    text-shadow: 2px 2px #FFFFFF;
+    text-shadow: 2px 2px #abba31;
 }

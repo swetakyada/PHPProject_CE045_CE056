@@ -15,20 +15,20 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, intial-scale=1, user-scalable=no" />
-        <title>Login</title>
+        <title>select quantity</title>
         <link rel="stylesheet" type="text/css" href="css/login.css">
     </head>
     <body>
         <?php 
 			include 'main.php';
 		?>
-        <div class="cont">
+        <div class="cont" style="opacity: 0.9;padding-top: 0px;">
             <form action="add_to_cart.php" method="post" name="login.php">
                 <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>" >
                 <div class="form-input">
-                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                    <input type="number" name="quantity" id="qty" value="1" />
-                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                    <div class="value-button" style="cursor: pointer;" id="decrease" onclick="decreaseValue()" value="Decrease Value"><h1>-</h1></div>
+                    <input type="number" name="quantity" style="height: 50px;border-radius: 15px;" id="qty" value="1" />
+                    <div class="value-button" id="increase" style="cursor: pointer;" onclick="increaseValue()" value="Increase Value" ><h1>+</h1></div>
                 </div>
                 <br>
                 <input type="submit" name="submit" value="Done" class="btn-login">

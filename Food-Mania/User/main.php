@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="page-bg"></div>
-        <nav style="background-color: white;">
+        <nav style="background-color: white;opacity: 0.8;">
             <div class="toggle">
                 <i class="fa fa-bars menu" aria-hidden="true"></i>
             </div>
