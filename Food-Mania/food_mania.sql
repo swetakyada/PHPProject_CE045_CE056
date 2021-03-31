@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Mar 31, 2021 at 11:56 AM
+-- Generation Time: Mar 31, 2021 at 01:12 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -32,7 +32,7 @@ CREATE TABLE `admin` (
   `username` varchar(30) NOT NULL,
   `email` varchar(30) NOT NULL,
   `password` varchar(10) NOT NULL,
-  `phone_no` int(10) NOT NULL
+  `phone_no` bigint(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -131,11 +131,7 @@ CREATE TABLE `orders` (
 INSERT INTO `orders` (`id`, `item_id`, `user_id`, `quantity`, `date`, `status`, `total`, `ordered`) VALUES
 (11, 3, 2, 6, '0000-00-00 00:00:00', 1, 1260, 1),
 (12, 1, 2, 3, '0000-00-00 00:00:00', -1, 450, 1),
-(18, 1, 2, 1, '2021-03-31 08:31:59', 0, 150, 1),
-(21, 15, 2, 1, '2021-03-31 09:55:50', 0, 50, 1),
-(22, 25, 2, 1, '2021-03-31 10:05:49', 0, 200, 1),
-(24, 15, 2, 1, '2021-03-31 11:52:38', 0, 50, 1),
-(25, 15, 2, 4, '2021-03-31 11:55:45', 0, 200, 1);
+(21, 15, 2, 1, '2021-03-31 09:55:50', 0, 50, 1);
 
 -- --------------------------------------------------------
 
@@ -147,7 +143,7 @@ CREATE TABLE `user` (
   `id` int(10) NOT NULL,
   `name` varchar(30) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `phone_no` int(10) NOT NULL,
+  `phone_no` bigint(10) NOT NULL,
   `password` varchar(20) NOT NULL,
   `address` varchar(200) NOT NULL,
   `pincode` int(6) NOT NULL
@@ -158,7 +154,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `phone_no`, `password`, `address`, `pincode`) VALUES
-(2, 'Firstname Lastname', 'email@gmail.com', 123456789, 'password', '165, apple heights, varachha, surat.', 123456);
+(2, 'Firstname Lastname', 'email@gmail.com', 123456789, 'password', '165, apple heights, varachha, surat.', 123456),
+(3, 'Shreya', 'spgoti09@gmail.com', 2147483647, 'shreyagoti09', '208,Rachna lakeview Recidency,Kalvibid Bhavnagar', 364002),
+(4, 'Fashion', 'fashioner@email.com', 2147483647, 'fashioner09', '208,Fashioner street', 364002),
+(5, 'sweta', 'sweta@gmail.com', 2673899222, 'swetakyada', 'surat', 357482);
 
 --
 -- Indexes for dumped tables
@@ -226,13 +225,13 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
