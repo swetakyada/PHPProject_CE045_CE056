@@ -17,7 +17,7 @@
 	<body>
 		<center>
 		<h1>Items</h1>
-		<a href="add_item.php">Add Item</a>
+		<a href="add_item.php" style="color: black">Add Item</a>
 		<?php
 			include 'connection.php';
 			if(isset($_SESSION['admin']))
@@ -38,7 +38,7 @@
 					$category = mysqli_fetch_array($result);
 					echo "<tr>";
 					echo "<td>"; echo $row["id"]; echo "</td>";
-					echo "<td>"; ?><img src="food_images/<?php echo $row['image']; ?>" height="100" width="100"><?php echo "</td>"; 
+					echo "<td>"; ?><img src="<?php echo $row['image'];?>" height="100" width="100"><?php echo "</td>"; 
 					echo "<td>"; echo $row["name"]; echo "</td>";
 					echo "<td>"; echo $row["price"]; echo "</td>";
 					echo "<td>"; echo $category[0]; echo "</td>";

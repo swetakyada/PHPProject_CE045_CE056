@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>About us</title>
+		<title>profile</title>
 		<link rel="stylesheet" type="text/css" href="css/table.css">
 	</head>
 	<body>

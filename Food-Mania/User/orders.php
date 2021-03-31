@@ -22,8 +22,8 @@
 				if($con > 0)
 				{
 					?>
-					<h1>Orders of Food</h1>
-					<table border="1px">
+					<h2 style="font-size: 40px;font-family: monospace;">Orders</h2>
+					<table>
 						<tr>
 							<th>OrderId</th>
 							<th>ItemName</th>

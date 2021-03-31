@@ -16,7 +16,7 @@
             <form action="add_category.php" method="post" enctype="multipart/form-data">
                 <table>
                     <tr>
-                        <td><input type="text" name="category" placeholder="name of food category" required>
+                        <td><input type="text"  name="category" placeholder="name of food category" required>
                     </tr>
                     <tr>
                         <td><input type="submit" value="Insert into category" name="submit" required>

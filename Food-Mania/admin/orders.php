@@ -69,7 +69,7 @@
 						echo "<h1>No Food Orders</h1>";
 					}
 					?>
-					Click <a href="approved_orders.php">here</a> to view Approved orders.
+					<h4 style="color: black">Click <a href="approved_orders.php" style="color: green">here</a> to view Approved orders.</h4>
 					<?php
 				}
 			?>
